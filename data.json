@@ -1,0 +1,9 @@
+{
+    "user":[
+        {"name":"Lijian","age":18},
+        {"name":"LiuXiang","age":28},
+        {"name":"ZhangFei","age":23},
+        {"name":"GuanYu","age":33},
+        {"name":"LiuBei","age":12}
+    ]
+}

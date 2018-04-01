@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is test XMLHttpRequest</h1>
+</body>
+    <script src="./index.js"></script>
+    <script>
+        var userList = "";
+        getDate("./data.json",function(data){
+            var data = eval('(' + data + ')');
+            data.user.map((user)=>{
+            //    console.log(`姓名:<span>${user.name}</span>&nbsp;年龄:<i>${user.age}</i>`)
+                userList +=`姓名:<span>${user.name}</span>&nbsp;年龄:<i>${user.age}</i><br/>`;
+            })
+            // document.getElementsByTagName('body')[0].appendChild(userStrs);
+            document.body.innerHTML = userList;
+        },function(data){
+
+        })
+    </script>
+</html>
